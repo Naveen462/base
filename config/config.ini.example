@@ -1,0 +1,7 @@
+[ADDRESS]
+env1=172.20.100.254,3000
+env2=192.168.68.140,3000
+[STATUS]
+# available values: busy/free
+env1=busy
+env2=free

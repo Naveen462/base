@@ -1,0 +1,13 @@
+[RULES]:
+# List of denied tags separate by comma ',' (don't insert space between fields)
+deny =
+# List of allowed tags separate by comma ',' (don't insert space between fields)
+allow =
+
+[TEST_INFO]
+# Tags to run specific tests (e.g. test title, test suite etc.)
+suite =
+chapter =
+title =
+number =
+

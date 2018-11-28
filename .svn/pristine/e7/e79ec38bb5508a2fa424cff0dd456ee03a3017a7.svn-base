@@ -1,0 +1,11 @@
+[ADDRESS]
+env1 = 172.20.100.254,3000
+env2 = 192.168.68.140,3000
+
+[STATUS]
+env1 = free
+env2 = busy
+
+[INFO]
+ppn = 02099430
+
