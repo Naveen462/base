@@ -12,13 +12,19 @@ pipeline {
       }
     }
     stage('Testing'){
+      steps{
       echo "not yet defined"
+      }
     }
     stage('Report'){
+      steps{
       echo "not yet defined"
+      }
     }
     stage('Merging'){
+      steps{
       echo "not yet defined"
+      }
     }
   }
 }
