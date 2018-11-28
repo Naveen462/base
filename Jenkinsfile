@@ -15,7 +15,7 @@ pipeline {
       echo "not yet defined"
     }
     stage('Report'){
-      echo "not yet defined
+      echo "not yet defined"
     }
     stage('Merging'){
       echo "not yet defined"
