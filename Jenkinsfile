@@ -1,7 +1,7 @@
 pipeline {
   agent none
   stages {
-    stage('Build') {
+    stage('LoadingModule') {
       agent {
         docker {
           image 'naveen462/pyenv6:first'
@@ -11,41 +11,14 @@ pipeline {
         sh 'python master.py -p omnia -v 02.01.04-DEVEL.3716.5bebe5e3 -b ./build -m full'
       }
     }
-    stage('Test') {
-      agent {
-        docker {
-          image 'qnib/pytest'
-        }
-
-      }
-      post {
-        always {
-          junit 'test-reports/results.xml'
-
-        }
-
-      }
-      steps {
-        sh 'py.test --verbose --junit-xml test-reports/results.xml sources/test_calc.py'
-      }
+    stage('Testing'){
+      echo "not yet defined"
     }
-    stage('Deliver') {
-      agent {
-        docker {
-          image 'cdrx/pyinstaller-linux:python2'
-        }
-
-      }
-      post {
-        success {
-          archiveArtifacts 'dist/add2vals'
-
-        }
-
-      }
-      steps {
-        sh 'pyinstaller --onefile sources/add2vals.py'
-      }
+    stage('Report'){
+      echo "not yet defined
+    }
+    stage('Merging'){
+      echo "not yet defined"
     }
   }
 }
