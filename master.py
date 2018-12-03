@@ -19,6 +19,7 @@ class CiCtMaster:
         self.used_env = None
         # Private object
         self._logger = None
+        # Main run
         self.__load_logger()
         self.__get_param()
         self.__run()
