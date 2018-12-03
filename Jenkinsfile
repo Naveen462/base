@@ -14,9 +14,6 @@ pipeline {
       }
     }
     stage('Testing'){
-      when{
-        branch 'master'
-      }
       steps{
       echo "not yet defined"
       }
